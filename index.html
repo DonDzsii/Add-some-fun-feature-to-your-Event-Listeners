@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Event Listeners</title>
+</head>
+<body>
+    <button class="buttonOne">Click!</button>
+    <button class="buttonTwo">change first button</button>
+    <button class="buttonThree">change buttons color</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="scripts.js"></script>
+
+    <script>
+
+        $('.buttonOne').click(() => {
+            $('.buttonOne').text("Yeah, you clicked me")
+        });
+
+        $('.buttonTwo').click(()=>{
+            $('.buttonOne').text("button 2 is da BEST!")
+        });
+
+        $('.buttonThree').click(()=>{
+            $('button').css("background","red")
+         
+        });
+
+
+    </script>
+</body>
+</html>
