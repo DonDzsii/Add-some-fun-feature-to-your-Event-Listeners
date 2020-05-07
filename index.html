@@ -6,29 +6,15 @@
     <title>Events & Event Listeners</title>
 </head>
 <body>
+  <div id="buttons"> 
     <button class="buttonOne">Click!</button>
     <button class="buttonTwo">change first button</button>
     <button class="buttonThree">change buttons color</button>
+  </div> 
+    <input type="color" name="color" id="color" value="blue"> 
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="scripts.js"></script>
 
-    <script>
-
-        $('.buttonOne').click(() => {
-            $('.buttonOne').text("Yeah, you clicked me")
-        });
-
-        $('.buttonTwo').click(()=>{
-            $('.buttonOne').text("button 2 is da BEST!")
-        });
-
-        $('.buttonThree').click(()=>{
-            $('button').css("background","red")
-         
-        });
-
-
-    </script>
 </body>
 </html>
