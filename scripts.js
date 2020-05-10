@@ -6,10 +6,17 @@ $('.buttonTwo').click(()=>{
     $('.buttonOne').text("button 2 is da BEST!")
 });
 
-$('.buttonThree').click(()=>{
-    $('button').css('background',$('#color').val())
-});
 
+i=0
+
+$('.buttonThree').click(()=>{
+
+    for (; i<1; i++){
+
+    $('button').css('background',$('#color').val());
+    
+    }
+});
 
 $('#buttons').css({'display':'flex','flex-direction':'column','width':'150px'})
 
